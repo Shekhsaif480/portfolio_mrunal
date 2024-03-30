@@ -9,7 +9,19 @@ import pb from './powerbi.png';
 import pd from './pandas.png';
 import py from './python.jpeg';
 import np from './numpy.png';
+
 import { ImHtmlFive } from "react-icons/im";
+import { IoLogoCss3 } from "react-icons/io5";
+import { IoLogoFigma } from "react-icons/io5";
+import { FaBootstrap } from "react-icons/fa";
+import { IoLogoTableau } from "react-icons/io5";
+import { SiPowerbi } from "react-icons/si";
+import { SiPandas } from "react-icons/si";
+import { FaPython } from "react-icons/fa";
+import { SiNumpy } from "react-icons/si";
+import { SiGooglecloud } from "react-icons/si";
+
+
 import { useEffect, useRef, useState } from 'react';
 import './App.css';
 
@@ -19,6 +31,19 @@ function App() {
   const [textWidth, setTextWidth] = useState(0);
   const [textHeight, setTextHeight] = useState(0);
   const textRef = useRef(null);
+
+  const LOGOS = [
+    <ImHtmlFive size={100} className="text-slate-800" />, // Example of adjusting size for a React Icon
+    <IoLogoCss3 size={100} className="text-slate-800" />,
+    <IoLogoFigma size={100} className="text-slate-800" />,
+    <FaBootstrap size={100} className="text-slate-800" />,
+    <IoLogoTableau size={100} className="text-slate-800" />,
+    <SiPowerbi size={100} className="text-slate-800" />,
+    <SiPandas size={100} className="text-slate-800" />,
+    <FaPython size={100} className="text-slate-800" />,
+    <SiNumpy size={100} className="text-slate-800" />,
+    <SiGooglecloud size={100} className="text-slate-800" />,
+  ];
 
   useEffect(() => {
     if (textRef.current) {
@@ -62,27 +87,36 @@ function App() {
       </div>
       <div>
         <img src={mrunal} class="floating-image" style={{ width: '400px', height: '400px', marginLeft: "50px", alignContent: "center", marginTop: '150px', borderRadius: '200px' }} />
-      </div>
-
-      </div>
-      <div className='text-6xl ml-2 flex font-bold' style={{color: '#0F71F2', animation: 'fadeIn 1s forwards ease', animationDelay: '7.5s' }}>
-      Skills:
-      </div>
-      <div className="flex mt-8">
         
-
-        <img src={py} style={{ height: "100px", width: "100px" , marginLeft:'20px', borderRadius: '50px'}} />
-        <img src={np} style={{ height: "100px", width: "100px" , marginLeft:'20px', borderRadius: '50px'}} />
-        <img src={pd} style={{ height: "100px", width: "100px" , marginLeft:'20px', borderRadius: '50px'}} />
-        <img src={pb} style={{ height: "100px", width: "100px" , marginLeft:'20px', borderRadius: '50px'}} />
-        <img src={tb} style={{ height: "100px", width: "100px" , marginLeft:'20px', borderRadius: '50px'}} />
-        <img src={html} style={{ height: "100px", width: "100px" , marginLeft:'20px', borderRadius: '50px'}} />
-        <img src={css} style={{ height: "100px", width: "100px" , marginLeft:'20px', borderRadius: '50px'}} />
-        <img src={bs} style={{ height: "100px", width: "100px" , marginLeft:'20px', borderRadius: '50px'}} />
-        <img src={figma} style={{ height: "100px", width: "100px" , marginLeft:'20px', borderRadius: '50px'}} />
-      
       </div>
-      <ImHtmlFive />
+
+      </div>
+      <div className='text-6xl mt-16 ml-2 flex font-bold bg-white' style={{ color: '#0F71F2', animation: 'fadeIn 1s forwards ease', animationDelay: '7.5s', textAlign: 'center' }}>
+  Skills:
+      <div className="relative m-auto w-[85%] overflow-hidden bg-white before:absolute before:left-0 before:top-0 before:z-[2] before:h-full before:w-[20px] before:bg-[linear-gradient(to_right,white_0%,rgba(255,255,255,0)_100%)] before:content-[''] after:absolute after:right-0 after:top-0 after:z-[2] after:h-full after:w-[20px] after:-scale-x-100 after:bg-[linear-gradient(to_right,white_0%,rgba(255,255,255,0)_100%)] after:content-['']">
+      <div className="animate-infinite-slider flex w-[calc(500px*10)]">
+        {LOGOS.map((logo, index) => (
+          <div
+            className="slide flex w-[125px] items-center justify-center"
+            key={index}
+          >
+            {logo}
+          </div>
+        ))}
+        {LOGOS.map((logo, index) => (
+          <div
+            className="slide flex w-[125px] items-center justify-center"
+            key={index}
+          >
+            {logo}
+          </div>
+        ))}
+      </div>
+    </div>
+</div>
+
+
+      
 
       <footer></footer>
     </div>
