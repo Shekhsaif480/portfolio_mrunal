@@ -80,12 +80,12 @@ function App() {
         <h2 className='text-3xl ml-2 flex'>Data Analyst <span className='mr-3'></span>|<span className='ml-3'></span> Frontend Web Developer <span className='mr-3'></span>|<span className='ml-3'></span> Content Member at GDSC <img src={gdsc} style={{ width: '38px', height: '38px', animation: 'fadeIn 1s forwards', animationDelay: '7s', marginLeft: "5px", alignContent: "center" }} /></h2>
       </div>
       <div>
-        <img src={mrunal} style={{ width: '400px', height: '400px', marginLeft: "23%", alignContent: "center", marginTop: '30px', borderRadius: '100px' }} />
+        <img src={mrunal} style={{ width: '400px', height: '400px', marginLeft: "23%", alignContent: "center", marginTop: '0px', borderRadius: '100px' }} />
         
       </div>
 
       </div>
-      <div className='text-6xl mt-16 ml-2 flex font-bold bg-white' style={{ color: '#0F71F2', animation: 'fadeIn 1s forwards ease', animationDelay: '7.5s', textAlign: 'center' }}>
+      <div className='text-6xl mt-16 ml-2 flex font-bold bg-white' style={{ color: '#D92929', animation: 'fadeIn 1s forwards ease', animationDelay: '7.5s', textAlign: 'center' }}>
   Skills:
       <div className="relative m-auto w-[85%] overflow-hidden bg-white before:absolute before:left-0 before:top-0 before:z-[2] before:h-full before:w-[20px] before:bg-[linear-gradient(to_right,white_0%,rgba(255,255,255,0)_100%)] before:content-[''] after:absolute after:right-0 after:top-0 after:z-[2] after:h-full after:w-[20px] after:-scale-x-100 after:bg-[linear-gradient(to_right,white_0%,rgba(255,255,255,0)_100%)] after:content-['']">
       <div className="animate-infinite-slider flex w-[calc(500px*10)]">
