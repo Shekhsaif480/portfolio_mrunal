@@ -1,14 +1,6 @@
 import gdsc from "./gdsc.png";
 import mrunal from './mrunal.png';
-import html from "./html.png";
-import css from './css.jpeg'
-import figma from './figma.jpeg'
-import bs from './bootstrap.png';
-import tb from './tableau.png';
-import pb from './powerbi.png';
-import pd from './pandas.png';
-import py from './python.jpeg';
-import np from './numpy.png';
+
 
 import { ImHtmlFive } from "react-icons/im";
 import { IoLogoCss3 } from "react-icons/io5";
@@ -24,6 +16,7 @@ import { SiGooglecloud } from "react-icons/si";
 
 import { useEffect, useRef, useState } from 'react';
 import './App.css';
+import Navbar from "./Navbar";
 
 
 
@@ -56,10 +49,11 @@ function App() {
   return (
     <div className="App block">
 
+        <Navbar/>
       <div className="flex">
 
 
-      <div className='mt-72'>
+      <div className='mt-32'>
         <h1 className="text-9xl font-bold" ref={textRef}>
           <span style={{ color: '#0F71F2', animation: 'fadeIn 1s forwards ease', animationDelay: '0.5s' }}>H</span>
           <span style={{ color: '#318C07', animation: 'fadeIn 1s forwards ease', animationDelay: '1s' }}>e</span>
@@ -86,7 +80,7 @@ function App() {
         <h2 className='text-3xl ml-2 flex'>Data Analyst <span className='mr-3'></span>|<span className='ml-3'></span> Frontend Web Developer <span className='mr-3'></span>|<span className='ml-3'></span> Content Member at GDSC <img src={gdsc} style={{ width: '38px', height: '38px', animation: 'fadeIn 1s forwards', animationDelay: '7s', marginLeft: "5px", alignContent: "center" }} /></h2>
       </div>
       <div>
-        <img src={mrunal} class="floating-image" style={{ width: '400px', height: '400px', marginLeft: "50px", alignContent: "center", marginTop: '150px', borderRadius: '200px' }} />
+        <img src={mrunal} style={{ width: '400px', height: '400px', marginLeft: "23%", alignContent: "center", marginTop: '30px', borderRadius: '100px' }} />
         
       </div>
 
