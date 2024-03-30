@@ -9,12 +9,11 @@ import pb from './powerbi.png';
 import pd from './pandas.png';
 import py from './python.jpeg';
 import np from './numpy.png';
+import { ImHtmlFive } from "react-icons/im";
 import { useEffect, useRef, useState } from 'react';
 import './App.css';
 
-import Slider from 'react-slick';
-import 'slick-carousel/slick/slick.css';
-import 'slick-carousel/slick/slick-theme.css';
+
 
 function App() {
   const [textWidth, setTextWidth] = useState(0);
@@ -28,15 +27,6 @@ function App() {
       setTextHeight(height);
     }
   }, []);
-  const settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 5,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 2000,
-  };
 
   return (
     <div className="App block">
@@ -79,7 +69,7 @@ function App() {
       Skills:
       </div>
       <div className="flex mt-8">
-        <Slider {...settings}>
+        
 
         <img src={py} style={{ height: "100px", width: "100px" , marginLeft:'20px', borderRadius: '50px'}} />
         <img src={np} style={{ height: "100px", width: "100px" , marginLeft:'20px', borderRadius: '50px'}} />
@@ -90,8 +80,9 @@ function App() {
         <img src={css} style={{ height: "100px", width: "100px" , marginLeft:'20px', borderRadius: '50px'}} />
         <img src={bs} style={{ height: "100px", width: "100px" , marginLeft:'20px', borderRadius: '50px'}} />
         <img src={figma} style={{ height: "100px", width: "100px" , marginLeft:'20px', borderRadius: '50px'}} />
-        </Slider>
+      
       </div>
+      <ImHtmlFive />
 
       <footer></footer>
     </div>
