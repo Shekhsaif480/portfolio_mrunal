@@ -35,7 +35,7 @@ const Footer = () => {
             <FaGithub className="text-2xl" />
           </a>
           <a href="https://www.cloudskillsboost.google/public_profiles/07b0d61d-53c3-4ab7-a10b-7b48f047ec75" target="_blank" rel="noopener noreferrer">
-            <img src={gc} width={40} height={40} className="text-2xl" />
+            <img src={gc} alt='gdsc' width={40} height={40} className="text-2xl" />
           </a>
         </div>
       </div>
