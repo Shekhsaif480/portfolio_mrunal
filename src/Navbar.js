@@ -25,7 +25,7 @@ const Navbar = () => {
 
 
     return (
-        <div className='flex ' class="nav" style={{ boxShadow: "0px 8px 6px -6px #F2A20C" }}>
+        <div className='flex' class="nav" style={{ boxShadow: "0px 8px 6px -6px #F2A20C" }}>
             <div className='h-8'>
 
 
