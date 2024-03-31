@@ -1,16 +1,12 @@
-import React, { useState } from 'react';
-import MenuIcon from '@mui/icons-material/Menu';
-import { IoIosArrowUp } from 'react-icons/io';
+import React from 'react';
+
 
 
 
 
 const Navbar = () => {
-    const [navVisible, setNavVisible] = useState(false);
 
-    const toggleNav = () => {
-        setNavVisible(!navVisible);
-    };
+
 
     const handleHomeClick = () => {
         // Navigate to the root page
@@ -26,17 +22,7 @@ const Navbar = () => {
 
     return (
         <div className='flex' class="nav" style={{ boxShadow: "0px 8px 6px -6px #F2A20C" }}>
-            <div className='h-8'>
-
-
-                {navVisible ? <IoIosArrowUp className="text-4xl" onClick={toggleNav} /> : <MenuIcon className="text-6xl" onClick={toggleNav} />}
-
-            </div>
-
-            {navVisible && (
-                <>
-
-
+           
 
                     <span className='text-4xl font-semibold' style={{ width: "33%", textAlign: "center", color: '#0F71F2' }} onClick={handleHomeClick}>Home</span>
 
@@ -45,8 +31,8 @@ const Navbar = () => {
                     <span className='text-4xl font-semibold' style={{ width: "33%", textAlign: "center", color: '#D92929' }}>
                         <a href="mailto:bhosalemrunal96@gmail.com">Contact</a>
                     </span>
-                </>
-            )}
+                
+            
         </div>
 
     );
