@@ -21,7 +21,7 @@ const Navbar = () => {
 
 
     return (
-        <div className='flex ' class="nav" style={{ boxShadow: "0px 8px 6px -6px #F2A20C" }}>
+        <div  className="flex" style={{ boxShadow: "0px 8px 6px -6px #F2A20C" }}>
            
 
                     <span className='text-4xl font-semibold' style={{ width: "33%", textAlign: "center", color: '#0F71F2' }} onClick={handleHomeClick}>Home</span>

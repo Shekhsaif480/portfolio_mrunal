@@ -11,7 +11,7 @@ import gc from "./imgs/gc.jpg"
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-800 text-white sticky z-50 mt-24">
+    <footer className="bg-gray-800 text-white sticky z-50 mt-24" style={{width:"100%"}}>
       <div className="container mx-auto flex justify-between items-center">
         <div className="flex flex-col">
           <div className="flex items-center">
